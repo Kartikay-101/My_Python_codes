@@ -1,7 +1,7 @@
 # What is a Variable? = A variable is simply a named locations/ container that stores a value.
 
 First_Name  = "Kartikay"
-Last_Name   = "Nauityal"
+Last_Name   = "Nautiyal"
 Age = 21
 Gmail   = "personal.mail@gmail.com"
 Language    = "Python"
