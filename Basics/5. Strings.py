@@ -9,8 +9,8 @@ address = """\nHouse No. 10
 Greater Noida
 Uttar Pradesh\n"""
 
-print("\n")
-print(name[0])
+print("\n--- Strings ---")
+print(name[0])      # String Indexing = Every character in a string has a position number.
 print(name[1])
 print(name[2])
 print(name[3])
