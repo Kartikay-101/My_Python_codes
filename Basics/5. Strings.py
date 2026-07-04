@@ -3,9 +3,10 @@
 
 # Strings are Immutable || Immutable means: Once a string is created, its characters cannot be changed.
 
-name = 'Kartikay'
+name = 'kartikay nautiyal'
 
-address = """\nHouse No. 10
+address = """\n
+House No. 10
 Greater Noida
 Uttar Pradesh\n"""
 
@@ -36,3 +37,21 @@ print(name[0:8:2])  # string[start:end:step] tells Python how many positions to 
 
 language = "Python"     # reverse a string
 print(language[::-2])
+
+# What are String Methods? = A method is a built-in function that belongs to an object.
+
+print('\nString Methods :- \n')
+print(name.upper())     # Converts all letters to uppercase.
+print(name.lower())     # Converts every letter into lowercase.
+print(name.capitalize())# Only the first letter becomes uppercase.
+print(name.title())     # Capitalizes the first letter of every word.
+print(address.swapcase())# Uppercase becomes lowercase. & Lowercase becomes uppercase.
+
+
+# print(address.upper())
+# print(address.lower())
+
+# print(len(name))
+# print(len(name.strip()))
+# print(len(address))
+# print(len(address.strip()))

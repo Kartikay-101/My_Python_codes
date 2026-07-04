@@ -1,2 +1,7 @@
-language = "Python"     # reverse a string
-print(language[::-2])
+print(address.upper())
+# print(address.lower())
+
+# print(len(name))
+# print(len(name.strip()))
+# print(len(address))
+# print(len(address.strip()))
