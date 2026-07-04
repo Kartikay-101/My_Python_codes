@@ -36,7 +36,8 @@ print(name[5:])     # Last 5 characters
 print(name[0:8:2])  # string[start:end:step] tells Python how many positions to move each time.
 
 language = "Python"     # reverse a string
-print(language[::-2])
+print(language[::-1])   # Reverse
+print(language[::-2])   # Reverse every second character
 
 # What are String Methods? = A method is a built-in function that belongs to an object.
 
@@ -47,11 +48,19 @@ print(name.capitalize())# Only the first letter becomes uppercase.
 print(name.title())     # Capitalizes the first letter of every word.
 print(address.swapcase())# Uppercase becomes lowercase. & Lowercase becomes uppercase.
 
+text = "    Python    "
+print(text)
+print(text.strip())     # Removes spaces (or specified characters) from both the beginning and the end of a string.
+print(len(text.strip()))
+print(len(text))
+print(text.lstrip())    # Removes spaces only from the left.
+print(text.rstrip())    # Removes spaces only from the right.
 
-# print(address.upper())
-# print(address.lower())
+print(text.replace("Pyt","R"))  # Replaces one value with another.
 
-# print(len(name))
-# print(len(name.strip()))
-# print(len(address))
-# print(len(address.strip()))
+print(name.find('n'))   # Finds the index of the first occurrence.
+print(name.count('a'))  # Counts how many times something appears.
+
+
+
+
