@@ -25,3 +25,10 @@ print(f"Length of '{name}' = {len(name)}")  # String Length len()
 print(f"Length of 'address' = {len(address)}")  # String Length len()
 
 print('\n')
+
+# What is String Slicing? = Slicing means extracting a portion (part) of a string.
+
+print(name[0:3])
+print(name[1:-1])
+print(name[1:])
+print(name[:-1])
