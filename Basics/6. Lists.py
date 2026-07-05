@@ -107,3 +107,28 @@ new_numbers = numbers.copy() # It creates a shallow copy of the list.
 
 print(numbers)
 print(new_numbers)
+
+
+
+# 1. List Methods
+# ✅ Methods that Return a Value
+# Method	Returns
+# pop()	Removed element
+# index()	Index of the value
+# count()	Number of occurrences
+# copy()	New (shallow) copied list
+
+# ✅ Methods that Return None (Modify the original list)
+# Method	Purpose
+# append()	Add one element at the end
+# extend()	Add multiple elements
+# insert()	Insert at a specific index
+# remove()	Remove by value
+# clear()	Remove all elements
+# sort()	Sort the list
+# reverse()	Reverse the list
+
+# This difference is commonly tested:
+
+# Lists are mutable → many methods modify the object and return None.
+# Strings are immutable → methods return a new value and leave the original string unchanged.
