@@ -90,3 +90,25 @@ text = "Straße"
     #here ß is called Eszett (sharp S).
 print(text.lower())
 print(text.casefold())
+
+print('\n')
+
+# Before leaving Strings, try writing a small program without looking at notes.
+
+name = input("Enter your Name :- ").title().strip()
+
+gmail = input("Enter your Gmail :- ").casefold().strip()
+
+print(f"Your mentioned Name is '{name}'")
+print(f"Your mentioned Gmail is '{gmail}'")
+print()
+print(f'Name = {name.split()}')
+print(f'Gmail = {gmail.split('@')}')
+print()
+print(f'Length of the Name = {len(name)}')
+print(f'Length of the Name = {len(gmail)}')
+
+print(email.endswith(".com"))
+
+print(name[::-1])
+print(gmail[::-1])
