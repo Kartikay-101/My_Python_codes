@@ -60,7 +60,26 @@ print(text.replace("Pyt","R"))  # Replaces one value with another.
 
 print(name.find('n'))   # Finds the index of the first occurrence.
 print(name.count('a'))  # Counts how many times something appears.
+print(name.startswith('kartikay'))  # Checks whether a string starts with a given value.
+print(name.endswith('nautiyal'))    # Checks whether a string ends with a given value.
+print(name.split(','))  # It converts a string into a list.⭐
+print(name.split('a'))
 
+email = "kartikay@gmail.com"
+print(email.split("@"))
 
+languages = ["Python", "SQL", "Excel"]  # It joins list elements into a string.
+print(" ".join(languages))
+print(",".join(languages))
+print("-".join(languages))
 
+print(language.isalpha());  # Checks whether all characters are letters.
+print(address.isalpha());
 
+print(name.isdigit())   # Checks whether all characters are Numbers.
+
+print(address.isalnum())   # Checks whether the string contains only letters and numbers.
+
+print(language.isspace()) # Checks whether the string contains only spaces.
+
+print(name.casefold())  # casefold() is similar to lower(), but it's more aggressive and is intended for case-insensitive comparisons.
