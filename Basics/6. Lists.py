@@ -32,7 +32,7 @@ students[2] = 'shivam'
 print(students)
 subjects[1] = 'No subjects'
 print(subjects)
-marks[4] = 'Null'
+marks[4] = None
 print(marks)
 print()
 
