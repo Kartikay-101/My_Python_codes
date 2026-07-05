@@ -83,3 +83,10 @@ print(address.isalnum())   # Checks whether the string contains only letters and
 print(language.isspace()) # Checks whether the string contains only spaces.
 
 print(name.casefold())  # casefold() is similar to lower(), but it's more aggressive and is intended for case-insensitive comparisons.
+
+
+            # Difference between lower and  casefold.
+text = "Straße"
+    #here ß is called Eszett (sharp S).
+print(text.lower())
+print(text.casefold())
