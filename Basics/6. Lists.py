@@ -35,3 +35,8 @@ print(subjects)
 marks[4] = 'Null'
 print(marks)
 print()
+
+# List Slicing - list_name[start : stop : step]
+
+print(students[1:-1])
+print(subjects[0:-1:2])
