@@ -31,8 +31,8 @@ print('\n')
 
 print(name[0:3])
 print(name[1:-1])
-print(name[:-5])    # First 5 characters
-print(name[5:])     # Last 5 characters
+print(name[:5])    # First 5 characters
+print(name[-5:])     # Last 5 characters
 print(name[0:8:2])  # string[start:end:step] tells Python how many positions to move each time.
 
 language = "Python"     # reverse a string
