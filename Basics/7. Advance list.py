@@ -235,7 +235,7 @@ for i in range(len(numbers)):
 
 # 3. Using enumerate() (Best for Index + Value)
 print()
-for index, value in enumerate(numbers, start=10):
+for ind, value in enumerate(numbers, start=10):
     print(index, value)
 
 # 4. Using a while Loop = Sometimes required when the stopping condition is dynamic.
