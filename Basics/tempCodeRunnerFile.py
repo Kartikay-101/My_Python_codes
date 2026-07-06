@@ -1,0 +1,1 @@
+numbers.remove(20)
