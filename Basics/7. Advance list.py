@@ -323,10 +323,8 @@ for emp_id, emp_name, emp_salary in employees:
 print()
 print('List Comprehension\n------------------')
 # Example 1: Create a list of squares of numbers from 1 to 5.
-squares = []
+squares = [x**2 for x in range(10)]
 
-for x in range(1,6):
-    squares.append(x**2)
 
 print(squares)
 
