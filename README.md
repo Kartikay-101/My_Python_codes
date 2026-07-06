@@ -187,8 +187,8 @@ This repository is being updated as I learn new Python concepts. Every completed
 | Input Function              |  ✅ Completed  |
 | Operators                   |  ✅ Completed  |
 | Type Conversion             |  ✅ Completed  |
-| Strings                     | ⏳ In Progress |
-| Lists                       | ⏳ In Progress |
+| Strings                     |  ✅ Completed  |
+| Lists                       |  ✅ Completed  |
 | Tuples                      | ⏳ Coming Soon |
 | Dictionaries                | ⏳ Coming Soon |
 | Sets                        | ⏳ Coming Soon |
@@ -280,22 +280,29 @@ For every topic, I follow this approach:
 ```text
 Python Learning Progress
 
-██████░░░░░░░░░░░░░░░░░░░░░ 20%
+████████████░░░░░░░░░░░░░░░░ 40%
 
-✔ Basics Started
 ✔ Variables
+✔ Data Types
 ✔ Input
 ✔ Operators
 ✔ Type Conversion
+✔ Strings
+✔ Lists
+✔ Tuples
+✔ Sets
+✔ Dictionaries
 
-⏳ Currently Learning
-• Strings
-• Lists
+Currently Learning
+➡️ Conditional Statements
 
-🚀 Next
-• Tuples
-• Dictionaries
-• Sets
+Coming Next
+• Loops
+• Functions
+• Modules
+• File Handling
+• Exception Handling
+• OOP
 ```
 
 ---
