@@ -93,7 +93,7 @@ if 20 in numbers:
 else:
     print(f"20 is not available in list 'numbers' {numbers}")
 
-print(20 not in numbers) 
+print(20 not in numbers)
 print()
 
 # 5. Comparison Operators = Python compares lists element by element (lexicographical comparison).
