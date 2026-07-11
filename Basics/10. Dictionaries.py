@@ -81,7 +81,7 @@ print(student)
 
 student.pop("age")
 print(student)
-
+print()
 # 7. popitem() = Removes the last inserted key-value pair and returns it as a tuple.
 
 print(student)
