@@ -79,3 +79,17 @@ a, *age = numbers
 
 print(a)
 print(age)
+
+
+# Tuple Methods
+
+# Method	Purpose
+# count()	Counts how many times an element appears
+# index()	Finds the first index of an element
+
+print("\n\tTuple Methods\n\t-----------------")
+
+print(f'Numbers Tuple: {numbers}\n')
+
+print(f'Count of 20 in Numbers Tuple: {numbers.count(20)}')  # Count of 20 in the tuple
+print(f'Index of 30 in Numbers Tuple: {numbers.index(30)}')  # Index of 30 in the tuple
