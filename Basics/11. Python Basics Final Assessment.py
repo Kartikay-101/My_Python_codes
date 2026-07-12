@@ -43,26 +43,36 @@ Only use the topics you've already learned.
 # Register 10 employees using user input.
 # Clean the input, convert datatypes, validate email and phone number.
 
-employee = []
-
 for i in range(10):
-    print(f"Employee {i}")
+    print(f"Employee {i+1}")
     emp_id = input('Enter Employee ID :- ').strip()
     name = input('Enter Employee Name :- ').strip().title()
-    age = input('Enter age :- +91 ').strip()
+    age = int(input("Enter Age : ").strip())
     mail = input('Enter Mail ID :- ').strip().casefold()
-    phone_number = input('Enter Phone Number :- ').strip()
+    phone_number = input('Enter Phone Number :- +91 ').strip()
+    salary = float(input("Enter Salary : ").strip())
 
-emp_id = int(emp_id)
-age = int(age)
-phone_number = int(phone_number)
+    valid = True
 
-if '@' in mail and mail.endswith('.com'):
-    print('Valid Mail')
-else:
-    print("Invalid mail")
+    if "@" not in mail or mail.count("@") != 1 or not mail.endswith(".com"):
+        print("❌ Invalid Email.")
+        valid = False
 
-if phone_number.isdigit() and len(phone_number) == 10 and phone_number[0] in '6789':
-    print("Valid Phone Number")
-else:
-    print("Invalid Phone Number")
+    if not(phone_number.isdigit() and len(phone_number) == 10 and phone_number[0] in '6789'):
+        print("❌ Invalid Phone Number")
+        valid = False
+
+    if valid:
+        employee = {
+            "id": emp_id,
+            "name": name,
+            "age": age,
+            "mail": mail,
+            "phone": phone_number,
+            "salary": salary
+        }
+        print("✅ Employee Registered Successfully.")
+        print(employee)
+    else:
+        print("❌ Employee Registration Failed.")
+
