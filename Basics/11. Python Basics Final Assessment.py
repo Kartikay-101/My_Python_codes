@@ -47,7 +47,9 @@ print('=' * 50)
 print('\t Employees Registration')
 print('=' * 50)
 
-for i in range(10):
+employees = []
+
+for i in range(2):
     print(f"\n\tEmployee '{i+1}'\n")
     emp_id = input('Enter Employee ID :- ').strip()
     name = input('Enter Employee Name :- ').strip().title()
@@ -75,10 +77,13 @@ for i in range(10):
             "phone": phone_number,
             "salary": salary
         }
+        employees.append(employee)
         print("\n\t✅ Employee Registered Successfully.\n")
-        for keys, values in employee.items():
-            print(f'{keys}      - {values}')
     else:
         print("❌ Employee Registration Failed.")
 
+
+for employee in employees:
+    for key, value in employee.items():
+        print(f"{key} - {value}")
 # --------------------------------------------------------------------------------------------------------------------------------
