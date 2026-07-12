@@ -43,8 +43,12 @@ Only use the topics you've already learned.
 # Register 10 employees using user input.
 # Clean the input, convert datatypes, validate email and phone number.
 
+print('=' * 50)
+print('\t Employees Registration')
+print('=' * 50)
+
 for i in range(10):
-    print(f"Employee {i+1}")
+    print(f"\n\tEmployee '{i+1}'\n")
     emp_id = input('Enter Employee ID :- ').strip()
     name = input('Enter Employee Name :- ').strip().title()
     age = int(input("Enter Age : ").strip())
@@ -71,8 +75,10 @@ for i in range(10):
             "phone": phone_number,
             "salary": salary
         }
-        print("✅ Employee Registered Successfully.")
-        print(employee)
+        print("\n\t✅ Employee Registered Successfully.\n")
+        for keys, values in employee.items():
+            print(f'{keys}      - {values}')
     else:
         print("❌ Employee Registration Failed.")
 
+# --------------------------------------------------------------------------------------------------------------------------------
