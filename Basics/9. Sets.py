@@ -165,4 +165,3 @@ print("Symmetric Difference:", A ^ B)
 print({1, 2}.issubset(A))
 print(A.issuperset({1, 2}))
 print({10, 20}.isdisjoint(A))
-
