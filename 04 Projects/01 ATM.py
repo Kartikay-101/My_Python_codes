@@ -16,9 +16,16 @@ if not account_holder['name'].isalpha():
     print('Invalid Name')
     valid = False
 
-if len(account_holder['phone_number']) != 10 or account_holder['phone_number[0]' not in '6789']:
+phone_n = str(account_holder['phone_number'])
+if len(phone_n) != 10 or phone_n[0] not in '6789':
     print('Invalid Phone Number')
+    valid = False
 
-print('\nAccount Holder Information =')
-for keys,values in account_holder.items():
-    print(f'{keys} = {values}')
+if account_holder['mail'].count('@') != 1 or account_holder['mail'].endswith('.com') == False:
+    print('Invalid Mail Id')
+    valid = False
+
+if valid:
+    print('\nAccount Holder Information =')
+    for keys,values in account_holder.items():
+        print(f'{keys} = {values}')
