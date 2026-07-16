@@ -12,7 +12,7 @@ account_holder = {
 }
 valid = True
 
-if not account_holder['name'].isalpha():
+if not account_holder['name'].replace(' ', '').isalpha():
     print('Invalid Name')
     valid = False
 
