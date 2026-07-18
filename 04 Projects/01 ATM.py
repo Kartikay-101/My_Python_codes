@@ -5,10 +5,11 @@ print()
 print("\t- Create your Account in MKB ATM")
 
 account_holder = {
-    'name': input('Name - ').strip().title(),
-    'phone_number': int(input('Phone Number - +91 ').strip()),
-    'mail': input('Mail ID - ').strip(),
-    'pincode': int(input('\n\t⭐Create Pin = ').strip())
+    'name': input('Name = ').strip().title(),
+    'phone_number': int(input('Phone Number = +91 ').strip()),
+    'mail': input('Mail ID = ').strip(),
+    'pincode': int(input('\n\t⭐Create Pin = ').strip()),
+    'balance': int(input('\nDeposit Initial Balance = Rs. ').strip())
 }
 valid = True
 
@@ -26,8 +27,12 @@ if account_holder['mail'].count('@') != 1 or account_holder['mail'].endswith('.c
     valid = False
 
 pincode_1 = str(account_holder['pincode'])
-if len(pincode_1) > 4:
+if len(pincode_1) != 4 and len(pincode_1) < 4:
     print('❌ Invalid Pin [It should be numeric and 4 Digit]')
+    valid = False
+
+if account_holder['balance'] >= 0 and account_holder['balance'].isdigit() == False:
+    print("❌ Balnace can not be maintained at 0 or below that.")
     valid = False
 
 if valid:
@@ -36,7 +41,7 @@ if valid:
     for keys,values in account_holder.items():
         print(f'*{keys.upper()} = {values}')
         print()
-    balance = float(0)
+    
 
 continue_account = input('Do you want to continue with your account? (Yes/No) ').strip().upper()
 
