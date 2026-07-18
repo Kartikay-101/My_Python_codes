@@ -37,6 +37,8 @@ if not account_holder['balance'].isdigit() or int(account_holder['balance']) <= 
     valid = False
 
 if valid:
+    account_holder['balance'] = float(account_holder['balance'])
+
     print(f'\n\t{'-'*20} Congratulation {'-'*20}\n\t ✅ Customer Acc. is created Successfully.')
     print(f'\nAccount Holder Information: \n {'-'*20}')
     for keys,values in account_holder.items():
