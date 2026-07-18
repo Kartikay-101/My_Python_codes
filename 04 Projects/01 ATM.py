@@ -31,7 +31,7 @@ if len(pincode_1) != 4 and len(pincode_1) < 4:
     print('❌ Invalid Pin [It should be numeric and 4 Digit]')
     valid = False
 
-if account_holder['balance'] >= 0 and account_holder['balance'].isdigit() == False:
+if account_holder['balance'] >= 0 and str(account_holder['balance']).isdigit() == False:
     print("❌ Balnace can not be maintained at 0 or below that.")
     valid = False
 
