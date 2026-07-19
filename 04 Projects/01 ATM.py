@@ -144,6 +144,5 @@ if valid:
             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
     else:
         print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
-
 else:
     print('\n\t❌ Account Creation Failed. Please check the errors above and try again.')
