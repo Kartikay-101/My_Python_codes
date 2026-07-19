@@ -66,6 +66,13 @@ if valid:
                         account_holder['balance'] += d_amount
                         print(f'\n\t✅ Your Account has been credited by an amount {d_amount} 💵\n')
                         print(f'\n\t Total Acc. Balance after credited is {account_holder['balance']}')
+                    
+                        ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
+                        if ruse in ('yes', 'y'):
+                            print(f'\n\t Redirecting to Menu\n\t {"-"*15}')
+                            continue
+                        else:
+                            print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
 
                 elif choice in ('withdraw', '2'):
 
@@ -77,16 +84,34 @@ if valid:
                     else:
                         account_holder['balance'] -= w_amount
 
-                    print(f'\n\t✅Your Account has been debited by an amount {w_amount} 💵\n')
-                    print(f'\n\t Total Acc. Balance after withdrawal is {account_holder['balance']}')
+                        print(f'\n\t✅Your Account has been debited by an amount {w_amount} 💵\n')
+                        print(f'\n\t Total Acc. Balance after withdrawal is {account_holder['balance']}')
+                        ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
+                        if ruse in ('yes', 'y'):
+                            print(f'\n\t Redirecting to Menu\n\t {"-"*15}')
+                            continue
+                        else:
+                            print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
 
                 elif choice in ('balance', '3'):
                     print(f'\n\t✅ Account Balance = Rs. {account_holder['balance']} 💵\n')
+                    ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
+                    if ruse in ('yes', 'y'):
+                        print(f'\n\t Redirecting to Menu\n\t {"-"*15}')
+                        continue
+                    else:
+                        print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
 
                 elif choice in ('account info', '4'):
                     print(f'\nAccount Holder Information: \n {'-'*20}')
                     for keys,values in account_holder.items():
                         print(f'*{keys.upper()} = {values}')
+                    ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
+                    if ruse in ('yes', 'y'):
+                        print(f'\n\t Redirecting to Menu\n\t {"-"*15}')
+                        continue
+                    else:
+                            print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
 
                 elif choice in ('change pin', '5'):
                     if account_holder['pincode'] == input(f'\nEnter Existing Pin of {account_holder["name"]} Acc. = '):
@@ -95,6 +120,13 @@ if valid:
                         if new_pincode.isdigit() == True and len(new_pincode) == 4:
                             print(f"⭐ New Pin has created :- ({new_pincode})")
                             account_holder['pincode'] = new_pincode
+
+                            ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
+                            if ruse in ('yes', 'y'):
+                                print(f'\n\t Redirecting to Menu\n\t {"-"*15}')
+                                continue
+                            else:
+                                print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
                         else:
                             print('❌ Invalid PIN. It must contain exactly 4 digits.')
                     else:
