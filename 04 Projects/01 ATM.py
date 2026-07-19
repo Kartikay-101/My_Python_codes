@@ -73,7 +73,7 @@ if valid:
                             continue
                         else:
                             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
-
+                            
                 elif choice in ('withdraw', '2'):
 
                     w_amount = float(input('~ Amount :- ').strip())
@@ -92,7 +92,7 @@ if valid:
                             continue
                         else:
                             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
-
+                            
                 elif choice in ('balance', '3'):
                     print(f'\n\t✅ Account Balance = Rs. {account_holder['balance']} 💵\n')
                     ruse = input('\n\t Do you want to Redirect to ATM Menu🏦 (yes/no) :- ').strip().lower()
