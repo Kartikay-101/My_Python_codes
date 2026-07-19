@@ -73,7 +73,8 @@ if valid:
                             continue
                         else:
                             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
-                            
+                            break
+
                 elif choice in ('withdraw', '2'):
 
                     w_amount = float(input('~ Amount :- ').strip())
@@ -92,6 +93,7 @@ if valid:
                             continue
                         else:
                             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
+                            break
                             
                 elif choice in ('balance', '3'):
                     print(f'\n\t✅ Account Balance = Rs. {account_holder['balance']} 💵\n')
@@ -101,6 +103,7 @@ if valid:
                         continue
                     else:
                         print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
+                        break
 
                 elif choice in ('account info', '4'):
                     print(f'\nAccount Holder Information: \n {'-'*20}')
@@ -112,6 +115,7 @@ if valid:
                         continue
                     else:
                             print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
+                            break
 
                 elif choice in ('change pin', '5'):
                     if account_holder['pincode'] == input(f'\nEnter Existing Pin of {account_holder["name"]} Acc. = '):
@@ -127,6 +131,8 @@ if valid:
                                 continue
                             else:
                                 print(f"\n\t{'~'*20} Thank You for using MKB ATM {'~'*20}\n\t{'~'*20} Visit Again {'~'*20}\n\t{'~'*20} MKB ATM ⭐ {'~'*20}\n\n")
+                                break
+                            
                         else:
                             print('❌ Invalid PIN. It must contain exactly 4 digits.')
                     else:
